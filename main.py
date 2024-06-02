@@ -203,7 +203,7 @@ def second():
         message.attach(part1)
         message.attach(part2)
         with smtplib.SMTP("91.217.246.43", 6040) as server:
-            server.login(sender_email, password)
+            server.login(sender_emaill, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
 
